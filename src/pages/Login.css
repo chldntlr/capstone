@@ -1,0 +1,85 @@
+.login-container {
+  width: 100%;
+  max-width: 400px; 
+  margin: 180px auto;
+  padding: 40px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 30px; 
+  position: relative; 
+}
+
+.input-group input {
+  width: 100%; 
+  padding: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.2s ease all;
+  box-sizing: border-box; 
+  height: 60px; 
+}
+
+.input-group label {
+  position: absolute;
+  left: 20px; 
+  top: 20px; 
+  font-size: 16px;
+  color: #999;
+  transition: 0.2s ease all; 
+  pointer-events: none; 
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: 5px; 
+  font-size: 12px; 
+  color: #007bff; 
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px; 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+/* 모바일 */
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,33 @@
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header nav ul li {
+    display: inline;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
